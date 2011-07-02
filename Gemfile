@@ -24,6 +24,10 @@ gem 'heroku'
 # Use unicorn as the web server
 # gem 'unicorn'
 
+group :production do
+  gem 'therubyracer-heroku', '0.8.1.pre3'
+end
+
 group :test, :development do
   gem 'turn', :require => false # Pretty printed test output
   gem 'ruby-debug19', :require => 'ruby-debug'
