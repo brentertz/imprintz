@@ -2,11 +2,11 @@
 db/*.sqlite3*
 database.yml
 log/*.log
-*.log
-/tmp/
-doc/
+tmp/
 *.swp
 *~
 .DS_Store
 bin/
 .idea/
+.sass-cache/
+*.ids

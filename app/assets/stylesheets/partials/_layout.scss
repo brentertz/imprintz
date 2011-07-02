@@ -1,0 +1,23 @@
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#container {
+  background: #fff;
+  clear: both;
+  margin: 0 auto;
+  width: 980px;
+
+  #content {
+    @extend .clearfix;
+    margin: 0 auto;
+    position: relative;
+    width: 980px;
+  }
+
+  #main {
+    text-align: center;
+  }
+}
