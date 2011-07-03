@@ -1,0 +1,8 @@
+development:
+  google_analytics_id:
+
+test:
+  google_analytics_id:
+
+production:
+  google_analytics_id:

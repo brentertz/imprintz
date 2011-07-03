@@ -8,8 +8,8 @@
 %head
   = render 'layouts/head'
 %body{ :class => "#{body_class}" }
+  = render 'layouts/flashes'
   #container
-    = render 'layouts/flashes'
     %header#header
       = render 'layouts/header'
     #main{ :role => 'main' }
