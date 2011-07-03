@@ -1,6 +1,7 @@
 .bundle
 db/*.sqlite3*
 database.yml
+config.yml
 log/*.log
 tmp/
 *.swp
