@@ -1,8 +1,18 @@
+defaults: &defaults
+  basic_auth: false
+  basic_auth_user: CONFIG_VAR_NOT_SET
+  basic_auth_password: CONFIG_VAR_NOT_SET
+  contact_email: CONFIG_VAR_NOT_SET
+  contact_phone: CONFIG_VAR_NOT_SET
+  google_analytics_id: CONFIG_VAR_NOT_SET
+  site_name: CONFIG_VAR_NOT_SET
+
 development:
-  google_analytics_id:
+  <<: *defaults
 
 test:
-  google_analytics_id:
+  <<: *defaults
 
 production:
-  google_analytics_id:
+  <<: *defaults
+

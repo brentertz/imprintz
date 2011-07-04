@@ -1,8 +1,11 @@
+%hgroup.brand
+  %p Custom Handmade Pottery
+  %h1 Imprintz
+  %p Boulder, Colorado
+
 %span.copyright
   Copyright &copy;
   = Date.today.year
-  Imprintz
 
-Lea Zoltowski Ertz
-
-info@imprintz.us
+%span.email
+  =mail_to CONFIG['contact_email'], CONFIG['contact_email'], :encode => "hex"

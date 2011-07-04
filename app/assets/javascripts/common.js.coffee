@@ -15,6 +15,7 @@ common =
     # bind scrollTo for top nav links
     $("#header nav.main a").bind 'click', (event) =>
       @scrollTo(event.currentTarget.hash)
+      false
 
     @flash()
 
@@ -28,7 +29,7 @@ common =
   # Scroll to target element (#id) position
   scrollTo: (target) ->
     target ||= 'html'
-    $("html").animate({"scrollTop": $(target).position().top}, 'slow')
+    $("html,body").animate({"scrollTop": $(target).position().top}, 'slow')
 
 window.common = common
 

@@ -2,13 +2,14 @@
 
 body {
   height: 100%;
-  padding-top: 100px;
+  padding-top: 110px;
   position: relative;
   width: 100%;
 }
 
 #header {
   background: #fff;
+  border-top: 10px solid;
   position: fixed;
   text-align: center;
   text-transform: uppercase;
@@ -16,23 +17,12 @@ body {
   height: 100px;
   width: 100%;
   z-index: 2000;
-
-  hgroup.brand {
-    position: absolute;
-    top: 15px;
-    width: 100%;
-
-    h1 {
-      margin: 0;
-    }
-
-    p {
-      font-size: smaller;
-      margin: 0 0 5px 0;
-    }
-  }
+  -moz-box-shadow: 0 10px 10px #fff;
+  -webkit-box-shadow: 0 10px 10px #fff;
+  box-shadow: 0 10px 10px #fff;
 
   nav.main {
+    font-family: 'Tenor Sans', sans-serif;
     position: relative;
     top: 43px;
 
@@ -43,11 +33,6 @@ body {
         &:after {
           content: "•";
         }
-        &:last-child {
-          &:after {
-            content: none;
-          }
-        }
         &:nth-child(2) {
           margin-right: 300px;
           &:after {
@@ -57,8 +42,42 @@ body {
         &:nth-child(3) {
           margin-left: 300px;
         }
+        &:last-child {
+          &:after {
+            content: none;
+          }
+        }
+
+        a {
+          &:hover, :active {
+            text-shadow: 0 0 50px #444;
+          }
+        }
       }
     }
+  }
+}
+
+hgroup.brand {
+  position: absolute;
+  top: 15px;
+  width: 100%;
+
+  h1 {
+    color: #00bbeb;
+    display: inline-block;
+    margin: 0;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+
+    &:hover {
+      letter-spacing: 5px;
+    }
+  }
+
+  p {
+    font-size: smaller;
+    margin: 0;
   }
 }
 
@@ -82,6 +101,7 @@ body {
     section {
       @extend .clearfix;
       margin: 20px 0 200px 0;
+      position: relative;
     }
   }
 }
@@ -89,6 +109,29 @@ body {
 #footer {
   background: #444;
   color: #fff;
-  height: 100px;
+  font-family: 'Tenor Sans', sans-serif;
+  height: 110px;
   margin-top: 50px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+
+  .copyright,
+  .email {
+    font-size: smaller;
+    position: relative;
+    top: 43px;
+  }
+  .copyright {
+    margin-right: 300px;
+  }
+  .email {
+    margin-left: 300px;
+  }
+
+  a,a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
 }

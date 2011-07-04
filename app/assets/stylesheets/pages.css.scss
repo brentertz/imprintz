@@ -3,11 +3,75 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body.pages {
+  section {
+    line-height: 1.5;
+
+    header {
+      background: rgba(0,187,235, 0.2);
+      margin: 0 0 20px;
+      padding: 5px 10px;
+      text-align: center;
+      text-transform: uppercase;
+
+      h2 {
+        margin: 0;
+      }
+    }
+  }
 
   #gallery {
-    img {
-      margin: 4px;
-      float: left;
+    ul {
+      list-style: none outside none;
+
+      li {
+        display: inline;
+        float: left;
+        height: 200px;
+        margin: 15px;
+        width: 200px;
+
+        &>img {
+          height: 200px;
+          width: 200px;
+
+          -moz-transition: all 0.25s ease-in-out;
+          -webkit-transition: all 0.25s ease-in-out;
+
+          &.photo {
+            border: 10px solid #fff;
+
+            &:hover {
+              cursor: pointer;
+              -moz-box-shadow: 0 0 15px rgba(0,0,0,0.9);
+              -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.9);
+            }
+          }
+
+          &.large_photo {
+            border: 20px solid #fff;
+            cursor: pointer;
+            height: 400px;
+            position: absolute;
+            width: 500px;
+            z-index: 1000;
+            -moz-transform: rotate(-5deg);
+            -webkit-transform: rotate(-5deg);
+            -moz-box-shadow: 0 0 30px #000;
+            -webkit-box-shadow: 0 0 30px #000;
+          }
+        }
+      }
+    }
+  }
+
+  #about {
+    .body {
+      -moz-column-count: 2;
+      -moz-column-gap: 50px;
+      -moz-column-rule: 1px solid #ccc;
+      -webkit-column-count: 2;
+      -webkit-column-gap: 50px;
+      -webkit-column-rule: 1px solid #ccc;
     }
   }
 }
