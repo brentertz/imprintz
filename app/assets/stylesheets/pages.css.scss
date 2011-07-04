@@ -74,4 +74,20 @@ body.pages {
       -webkit-column-rule: 1px solid #ccc;
     }
   }
+
+  #contact {
+    .info {
+      float: left;
+      width: 465px;
+      margin-right: 50px;
+    }
+    form {
+      float: left;
+      width: 465px;
+
+      textarea {
+        height: 100px;
+      }
+    }
+  }
 }

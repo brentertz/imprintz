@@ -121,7 +121,8 @@ h6 { font-size: 108%; } /*renders 14px */
 }
 
 #flash {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: 10000;
   p {
@@ -167,8 +168,8 @@ select {
   background-color: #fff;
   border: 1px solid #ccc;
   margin: 0;
-  padding: 5px;
-  width: 200px;
+  padding: 15px;
+  width: 400px;
   border-radius: 5px;
 
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
@@ -176,10 +177,11 @@ select {
   -o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
   box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
 }
-
+textarea::-webkit-input-placeholder,
 input::-webkit-input-placeholder {
   color: #999;
 }
+textarea:-moz-placeholder,
 input:-moz-placeholder {
   color: #999;
 }
@@ -193,6 +195,10 @@ select {
     border-color: #fbc2c4;
     color: #8a1f11;
   }
+}
+
+textarea {
+  resize: vertical;
 }
 
 label {
