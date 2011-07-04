@@ -1,13 +1,72 @@
+@import "partials/helpers";
+
 body {
   height: 100%;
-  width: 100%;
+  padding-top: 100px;
   position: relative;
+  width: 100%;
+}
+
+#header {
+  background: #fff;
+  position: fixed;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  z-index: 2000;
+
+  hgroup.brand {
+    position: absolute;
+    top: 15px;
+    width: 100%;
+
+    h1 {
+      margin: 0;
+    }
+
+    p {
+      font-size: smaller;
+      margin: 0 0 5px 0;
+    }
+  }
+
+  nav.main {
+    position: relative;
+    top: 43px;
+
+    ul {
+      list-style: none outside none;
+      li {
+        display: inline;
+        &:after {
+          content: "•";
+        }
+        &:last-child {
+          &:after {
+            content: none;
+          }
+        }
+        &:nth-child(2) {
+          margin-right: 300px;
+          &:after {
+            content: none;
+          }
+        }
+        &:nth-child(3) {
+          margin-left: 300px;
+        }
+      }
+    }
+  }
 }
 
 #container {
-  background: #fff;
+  background: #444;
   clear: both;
   margin: 0 auto;
+  position: relative;
   width: 980px;
 
   #content {
@@ -18,6 +77,18 @@ body {
   }
 
   #main {
-    text-align: center;
+    background: #fff;
+
+    section {
+      @extend .clearfix;
+      margin: 20px 0 200px 0;
+    }
   }
+}
+
+#footer {
+  background: #444;
+  color: #fff;
+  height: 100px;
+  margin-top: 50px;
 }

@@ -9,11 +9,11 @@
   = render 'layouts/head'
 %body{ :class => "#{body_class}" }
   = render 'layouts/flashes'
+  %header#header
+    = render 'layouts/header'
   #container
-    %header#header
-      = render 'layouts/header'
     #main{ :role => 'main' }
       = yield
-    %footer#footer
-      = render 'layouts/footer'
+  %footer#footer
+    = render 'layouts/footer'
   = render 'layouts/end_javascripts'
