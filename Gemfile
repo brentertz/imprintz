@@ -26,6 +26,7 @@ gem 'heroku'
 
 group :production do
   gem 'therubyracer-heroku', '0.8.1.pre3'
+  gem 'unicorn'
 end
 
 group :test, :development do
