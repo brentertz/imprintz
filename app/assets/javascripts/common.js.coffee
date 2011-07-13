@@ -17,6 +17,10 @@ common =
       @scrollTo(event.currentTarget.hash)
       false
 
+    # Modernizr detection for HTML5 placeholder support
+    if (Modernizr.input.placeholder)
+      $('html').addClass('placeholder')
+
     @flash()
 
   # Show flash notifications

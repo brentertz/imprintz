@@ -17,6 +17,7 @@ gem 'coffee-script'
 gem 'uglifier'
 
 gem 'jquery-rails'
+gem 'client_side_validations'
 
 # Deployment
 gem 'heroku'
