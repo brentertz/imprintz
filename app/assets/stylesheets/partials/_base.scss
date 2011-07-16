@@ -164,6 +164,8 @@ form .row {
 
 input[type=text],
 input[type=password],
+input[type=email],
+input[type=tel],
 textarea,
 select {
   background-color: #fff;
@@ -189,6 +191,8 @@ input:-moz-placeholder {
 
 input[type=text],
 input[type=password],
+input[type=email],
+input[type=tel],
 textarea,
 select {
   &.error {
@@ -205,6 +209,8 @@ select {
 
   input[type=text],
   input[type=password],
+  input[type=email],
+  input[type=tel],
   textarea,
   select {
     background: #fbe3e4;
