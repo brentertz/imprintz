@@ -18,7 +18,7 @@ gem 'jquery-rails'
 gem 'client_side_validations'
 
 group :production do
-  gem 'therubyracer-heroku', '0.8.1.pre3'
+  #gem 'therubyracer-heroku', '0.8.1.pre3'
   gem 'unicorn'
 end
 
