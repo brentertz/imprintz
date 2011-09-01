@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/yabawock/handlebars-rails.git
+  revision: b24387ac947b587940ea3920673647ad4eda7b59
+  specs:
+    handlebars-rails (0.9.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -158,6 +164,7 @@ DEPENDENCIES
   coffee-rails (~> 3.1.0)
   haml
   haml-rails
+  handlebars-rails!
   jquery-rails
   json
   rails (= 3.1.0)

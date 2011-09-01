@@ -5,6 +5,7 @@ gem 'rails', '3.1.0'
 gem 'json'
 gem 'haml'
 gem 'haml-rails'
+gem 'handlebars-rails', :git => 'git://github.com/yabawock/handlebars-rails.git'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -18,7 +19,6 @@ gem 'jquery-rails'
 gem 'client_side_validations'
 
 group :production do
-  #gem 'therubyracer-heroku', '0.8.1.pre3'
   gem 'unicorn'
 end
 
