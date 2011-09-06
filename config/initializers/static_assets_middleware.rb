@@ -10,8 +10,8 @@ module Heroku
       status, headers, response = reply
 
       # static files are cacheable for ...
-      headers['Cache-Control'] = 'public, max-age=0'
-      #headers['Cache-Control'] = 'public, max-age=43200' # 12 hours - Heroku default
+      #headers['Cache-Control'] = 'public, max-age=0'
+      headers['Cache-Control'] = 'public, max-age=43200' # 12 hours - Heroku default
       #headers['Cache-Control'] = 'public, max-age=31556926' # 1 year
 
       build_new_reply(status, headers, response)
