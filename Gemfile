@@ -5,7 +5,8 @@ gem 'rails', '3.1.0'
 gem 'json'
 gem 'haml'
 gem 'haml-rails'
-gem 'handlebars-rails', :git => 'git://github.com/yabawock/handlebars-rails.git'
+gem 'jquery-rails'
+gem 'client_side_validations'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -14,9 +15,6 @@ group :assets do
   gem 'coffee-rails', "~> 3.1.0"
   gem 'uglifier'
 end
-
-gem 'jquery-rails'
-gem 'client_side_validations'
 
 group :production do
   gem 'unicorn'
