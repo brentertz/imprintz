@@ -27,12 +27,12 @@ body.pages {
         display: inline;
         float: left;
         height: 200px;
-        margin: 15px;
+        margin: 20px;
         width: 200px;
 
         &>img {
-          height: 200px;
-          width: 200px;
+          height: 210px;
+          width: 210px;
 
           -moz-transition: all 0.25s ease-in-out;
           -webkit-transition: all 0.25s ease-in-out;
@@ -80,6 +80,19 @@ body.pages {
       float: left;
       width: 465px;
       margin-right: 50px;
+
+      div {
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        color: #CCC;
+        margin-bottom: 10px;
+      }
+
+      span {
+        font-size: 16px;
+      }
     }
     form {
       float: left;
